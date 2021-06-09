@@ -1,0 +1,11 @@
+<div class="container">
+  <%= simple_form_for(@restaurant) do |f| %>
+    <%= f.input :name %>
+    <%= f.label :category %>
+    <%= f.select :category, ["chinese", "italian", "japanese", "french", "belgian"] %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.submit class: "btn btn-primary"%>
+  <% end %>
+</div>
+
